@@ -20,33 +20,53 @@ font-family: "Raleway", sans-serif;
 /* 폰트*/
 
 /* HEADER */
+.logo a{
+    background: url(/SIMMONS/images/header_logo.png)no-repeat;
+    display: block;
+    width: 79px;
+    height: 52px;
+    text-indent: -9999em;
+}
+.top_nav{
+    background: #ebebeb;
+    height: 100px;
+}
 a{
     text-decoration: none;
     color: black;
 }
-.logo a{
-    background: url(/SIMMONS/images/header_logo.png)no-repeat;
-    display: inline-block;
-    width: 79px;
-    height: 52px;
-    text-indent: -9999em;
-    margin-left: 294px;
-}
-header nav{
-    float: right;
-    margin-right: 394px;
-}
-.top_nav{
-    display: flex;
-    justify-content: space-between;
-}
-.top_nav ul{
-    display: flex;
-    gap: 60px;
-    list-style: none;
-}
 .main_menu ul li{
     display: none;
+    float: left;
 }
-
+#topmenu{
+    /* height: 23px; */
+    /* width: 519px; */
+    margin: 0 auto;
+    /* width: 1920px; */
+}
+#topmenu ul{
+    display: flex;
+    float: right;
+}
+#topmenu ul li{
+    list-style: none;
+    /* float: left; */
+    line-height: 23px;
+    text-align: center;
+    /* margin-left: 100px; */
+}
+#topmenu .menuLink a{
+    width: 150px;
+    font-size: 18px;
+    /* font-weight: bold; */
+}
+#topmenu .menuLink{
+    display: block;
+    position: relative;
+}
+#topmenu ul ul{
+    /* float: left; */
+    position: absolute;
+}
 /* 링크 버튼 */
