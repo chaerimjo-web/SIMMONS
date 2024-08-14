@@ -9,11 +9,11 @@
 <body>
     <header>
       <div class="top_nav">
-        <div class="container">
-            <h1 class="logo"><a href="">SIMMONS</a></h1>
-            <nav>
+        <!-- <div class="container_nav"> -->
+            <nav id="topmenu">
+                <h1 class="logo"><a href="">SIMMONS</a></h1>
                 <ul class="main_menu">
-                    <li><a href="">Product</a>
+                    <li class="menuLink"><a href="">Product</a>
                         <ul>
                             <li>Mattress</li>
                             <li>Frame</li>
@@ -21,34 +21,35 @@
                             <li>Bedding</li>
                         </ul>
                     </li>
-                    <li><a href="">Collection</a>
+                    <li class="menuLink"><a href="">Collection</a>
                         <ul>
                             <li>Beautyrest</li>
                             <li>N32</li>
                             <li>KENOSHA</li>
                         </ul>
                     </li>
-                    <li><a href="">EVENT! </a>
+                    <li class="menuLink"><a href="" >EVENT! </a>
                         <ul>
                             <li>EVENT!</li>
                         </ul>
                     </li>
-                    <li><a href="">SIMMONS</a>
+                    <li class="menuLink"><a href="">SIMMONS</a>
                         <ul>
                             <li>HERITAGE</li>
                             <li>MEDIA</li>
                             <li>SIMMONS IN HOTEL</li>
                         </ul>
                     </li>
-                    <div class="dropdown">
-                    <a href=""><i class="fa-solid fa-user"></i>로그인</a>
+                </ul>
+                    <ul class="dropdown">
+                    <li class="main_menu"><a href="" class="menuLink"><i class="fa-solid fa-user"></i>로그인</a>
                     <ul>
                         <li>Login</li>
                         <li>Logout</li>
                     </ul>
-                </div>
-                <a href=""><i class="fa-solid fa-cart-shopping"></i>카트</a>
-                </ul>
+                    <li><a href=""><i class="fa-solid fa-cart-shopping"></i>카트</a></li>
+                </li>
+            </ul>
             </nav>
         </div>
       </div>  
@@ -127,8 +128,9 @@
             </form>
         </div>
         <section class="product_slidewrapper">
+            <div class="category">
             <h2>MATTRESS</h2>
-            <button>Shop Now <i class="fa-solid fa-arrow-right-long"></i></button>
+            <a href="" class="btn">Shop Now <i class="fa-solid fa-arrow-right-long"></i></a> 
             <ul class="mattress_list">
                 <li>
                     <figure>
@@ -141,8 +143,9 @@
                     </figure>
                 </li>
             </ul>
+            </div>
             <h2>FRAME</h2>
-            <button>Shop Now <i class="fa-solid fa-arrow-right-long"></i></button>
+            <a href="" class="btn">Shop Now <i class="fa-solid fa-arrow-right-long"></i></a>
             <ul class="frame_list">
                 <li>
                     <figure>
