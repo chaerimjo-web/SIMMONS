@@ -12,6 +12,10 @@ font-family: "Raleway", sans-serif;
 */
 
 /* 레이아웃 */
+* {
+    padding: 0;
+    margin: 0;
+}
 .container{
     width: var(--container);
     margin: 0 auto;
@@ -20,53 +24,116 @@ font-family: "Raleway", sans-serif;
 /* 폰트*/
 
 /* HEADER */
-.logo a{
+
+/* .logo a{
     background: url(/SIMMONS/images/header_logo.png)no-repeat;
-    display: block;
+    display: inline-block;
     width: 79px;
     height: 52px;
     text-indent: -9999em;
+} */
+/* .test{
+    float: right;
+} */
+
+.logo a{
+    background: url(/images/header_logo.png)no-repeat;
+    width: 79px;
+    height: 52px;
+    text-decoration: none;
+    text-indent: -9999em;
+    display: block;
+    margin-left: 400px;
+}
+.menuLink ul{
+    margin-left: 150px;
+    text-align: center;    
+    display: none;
 }
 .top_nav{
-    background: #ebebeb;
     height: 100px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
 }
-a{
-    text-decoration: none;
-    color: black;
-}
-.main_menu ul li{
-    display: none;
-    float: left;
-}
-#topmenu{
-    /* height: 23px; */
-    /* width: 519px; */
-    margin: 0 auto;
-    /* width: 1920px; */
-}
-#topmenu ul{
+header nav{
     display: flex;
-    float: right;
+    padding-top: 33px;
 }
-#topmenu ul li{
-    list-style: none;
-    /* float: left; */
-    line-height: 23px;
+nav ul li a{
+    text-decoration: none;
+    padding: 20px 25px;
     text-align: center;
-    /* margin-left: 100px; */
-}
-#topmenu .menuLink a{
-    width: 150px;
     font-size: 18px;
-    /* font-weight: bold; */
+    font-weight: bold;
 }
-#topmenu .menuLink{
-    display: block;
+nav ul li{
+    display: inline-block;
+    /* float: left; */
+    margin-left: 30px;
+    color: #000;
+    text-align: center;
+}
+nav ul{
     position: relative;
 }
-#topmenu ul ul{
-    /* float: left; */
+.cf::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.dropdown{ /*하위메뉴*/
+    position: absolute;
+    text-align: center;
+    top: 100%;
+    left: 0;
+    border:1px solid #695b5b;
+    background: rgba(160, 160, 160,.3);
+}
+.main_menu li:hover li{
+    font-size: 20px;
+    padding: 5px 20px;
+} 
+.main_menu ul a{
+    background: #ddd;
+    text-align: center;
+    z-index: -1;
+    padding: 5px 20px; 
+}
+.main_menu li:hover ul{
+    display: inline-block;
+    height: 250px;
+    opacity: 1;
+    transform: translateY(0);
+}
+.dropdown::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.dropdown > li{   /*하위메뉴*/
+    margin-top: 20px;
+}
+.main_menu{
+    text-align: center;
+    padding: 0px 400px;
+}
+.slides img{
+    height: 500px;
+    width: 1920px;
+}
+.slidewrapper {
+    position: relative;
+    background: url(/images/header_banner_hotel_img.jpg)no-repeat;
+    width: 1920px;
+    height: 500px;
+}
+.slides{
     position: absolute;
 }
-/* 링크 버튼 */
+span .text{
+    display: block;
+    color: white;
+    width: 366px;
+    height: 266px;
+}
+
