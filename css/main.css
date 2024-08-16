@@ -3,7 +3,7 @@
 
 :root{
     --txt-color: #000000;
-    --container : 1920px;
+    --container : 1380px;
 }
 /* 
 font-family: "Overpass", sans-serif;
@@ -24,17 +24,16 @@ font-family: "Raleway", sans-serif;
 /* 폰트*/
 
 /* HEADER */
-
+/* 로고 */
 .logo a{
-    background: url(/SIMMONS-1/images/header_logo.png)no-repeat;
+    background: url(../images/header_logo.png)no-repeat;
     width: 79px;
     height: 52px;
     text-decoration: none;
     text-indent: -9999em;
     display: block;
-    margin-left: 400px;
+    /* margin-right: 442px; */
 }
-
 .top_nav{
     height: 100px;
     background: white;
@@ -42,98 +41,135 @@ font-family: "Raleway", sans-serif;
 }
 header nav{
     display: flex;
-    padding-top: 33px;
+    padding-top: 35px;
+    justify-content: space-between;
 }
  a{
     color: #333;
     text-decoration: none;
  }
+
+ /* NAV */
+ nav ul{
+    position: relative;
+}
  nav ul li{
     list-style: none;
  }
- .container_nav ul li{
-    float: left;
+ .container ul li{
     width: 140px;
     position: relative;
- } 
- .container_nav ul li ul{
+ }
+.container ul li ul{
     width: 140px;
     position: absolute;
     font-size: 14px;
     display: none;
     background: #333;
     border: 1px solid black;
-    margin:0px;
-
  }
- .main_menu ul a{
-    color: wheat;
+ .dropdown li a{
+    line-height: 30px;
 }
- .container_nav > ul  li:hover > ul{
+ .container > ul  li:hover > ul{
     display: block;
     text-align: center;
+    top: 50px;
  }
- .container_nav > ul > li > ul > li:hover a{
-    color: orange;
+ .container > ul > li > ul > li:hover {
     text-align: center;
     transition: ease 1s;
-    color: white;
-}
- .container_nav{
-    display: flex;
+    /* color: white; */
     font: bold;
-    width: 800px;
-    height: 50px;
-    line-height: 50px;
-    color: white;
-    margin: 0 auto;
-    text-align: center;
+    background: #8C9D96;
+}
+ .icon{
+    display: flex;
  }
-nav ul{
-    position: relative;
+ .menuLink ul a{
+    color: wheat;
 }
-.cf::after{
-    content: '';
+.login li a{
+    color: wheat;
+}
+ .icon .login{
+    width: 22px;
+    height: 35px;
+    gap: 42px;
+    /* position: relative; */
+ }
+.icon .login .dropdown{
+    width: 140px;
+    position: absolute;
+    /* font-size: 14px; */
+    background: #333;
+    border: 1px solid black;
+}
+.icon:hover > ul{
     display: block;
-    clear: both;
-}
-.menuLink ul{
-     display: flex;
-     justify-content: center;
-     flex-direction: column;
+    text-align: center;
 }
 
-.dropdown::after{
-    content: '';
-    display: block;
-    clear: both;
-}
-.dropdown {   /*하위메뉴*/
-    margin-top: 20px;
+.main_menu{
     display: flex;
-    /* text-align: center; */
-}
-nav .lg{
-    gap: 10px;
-}
+    gap: 65px;
+    text-align: center;
+ }
+ .main_menu li{
+    font-weight: bold;
+ }
+ .main_menu li:hover {
+    /* font-size: 18px; */
+    transition: 0.3s;
+ }
+
+ /* SLIDE */
 .slidewrapper {
     position: relative;
     background: url(/SIMMONS-1/images/header_banner_hotel_img.jpg)no-repeat;
     width: 1920px;
     height: 500px;
     z-index: -1;
+    position: relative;
 }
 .slidewrapper img{
-    width: 100%;
+    /* max-width: 100%; */
     height: 100%;
+}
 
-}
-.slides{
-    position: absolute;
-}
 .text{
     display: inline-block;
     color: white;
     width: 366px;
     height: 266px;
+}
+
+.button{
+    width: 32px;
+    height: 62px;
+    background: white transparent;
+    border: none;
+    cursor: pointer;
+}
+.slidewrapper{
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+.slidewrapper .fbutton{
+    top: calc(50% - 31px);
+    position: absolute;
+}
+.slidewrapper .left{
+    left: 100px;
+    color: red;
+}
+.slidewrapper .right{
+    right: 100px;
+}
+.button{
+    color: red;
+    cursor: pointer;
+    background: transparent;
 }
