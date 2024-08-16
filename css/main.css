@@ -1,15 +1,17 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root{
     --txt-color: #000000;
     --container : 1380px;
 }
-/* 
-font-family: "Overpass", sans-serif;
+
+/* font-family: "Overpass", sans-serif;
 font-family: "Montserrat", sans-serif;
 font-family: "Raleway", sans-serif;
-*/
+font-family: "Roboto", sans-serif; */
+
 
 /* 레이아웃 */
 * {
@@ -39,6 +41,9 @@ font-family: "Raleway", sans-serif;
     background: white;
     box-shadow: 0 0 10px rgba(0,0,0,.3);
 }
+header {
+    margin-bottom: 180px;
+}
 header nav{
     display: flex;
     padding-top: 35px;
@@ -65,16 +70,16 @@ header nav{
     position: absolute;
     font-size: 14px;
     display: none;
-    background: #333;
+    background:rgba(51, 51, 51, .5);
     border: 1px solid black;
  }
  .dropdown li a{
-    line-height: 30px;
+    line-height: 40px;
 }
  .container > ul  li:hover > ul{
     display: block;
     text-align: center;
-    top: 50px;
+    top: 30px;
  }
  .container > ul > li > ul > li:hover {
     text-align: center;
@@ -83,6 +88,7 @@ header nav{
     font: bold;
     background: #8C9D96;
 }
+
  .icon{
     display: flex;
  }
@@ -91,6 +97,9 @@ header nav{
 }
 .login li a{
     color: wheat;
+}
+.menuLink ul a:hover{
+    color: #fff;
 }
  .icon .login{
     width: 22px;
@@ -158,18 +167,101 @@ header nav{
     position: relative;
 }
 .slidewrapper .fbutton{
-    top: calc(50% - 31px);
+    top: 50%;
     position: absolute;
 }
 .slidewrapper .left{
     left: 100px;
-    color: red;
 }
 .slidewrapper .right{
     right: 100px;
 }
 .button{
-    color: red;
     cursor: pointer;
     background: transparent;
+}
+
+/* 검색버튼 */
+.search{
+    width: var(--container);
+    margin-top: 179px;
+}
+.borderbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin: 0px 292px 10px 860px;
+    /* margin-top: 0; */
+}
+.borderbox label{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#size{
+    width: 155px;
+    height: 25px;
+    /* margin-right: 40px; */
+}
+#hardness{
+    margin-left: 40px;
+}
+#hardness{
+    width: 170px;
+    height: 25px;
+}
+.found{
+    height: 25px;
+    width: 220px;
+    border: none;
+    border: 1px solid gray;
+    text-align: center;
+    margin-left: 170px;
+    margin-right:10px;
+}
+select, .found{
+    border: none;
+    border-bottom: 1px solid #000000;
+}
+.see{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #8C9D96;
+    color: black;
+}
+/* product slide */
+.product_slidewrapper{
+    /* position: relative; */
+    margin-left: 250px;
+    margin-top: 237px;
+}
+.category{
+    /* position: absolute; */
+    /* display: flex; */
+    display: inline-block;
+    /* margin-bottom: 297px; */
+}
+.MATTRESS h2{
+    font-size: 30px;
+    position: relative;
+    margin-bottom: 19px;
+    text-align: center;
+    display: block;
+    font-family: "Roboto Slab", serif;
+    font-weight: 300;
+}
+.MATTRESS a{
+    display: inline-block;
+    font-size: 22px;
+    border: 1px solid #000000;
+    text-align: center;
+    padding: 15px 30px ;
+    position: absolute;
+    font-family: "Overpass", sans-serif;
+}
+.MATTRESS a:hover{
+    background: rgba(140, 157, 150,.5);
+    color: white;
+    transition: 0.3s;
 }

@@ -74,9 +74,9 @@
 
     <main>
         <div class="search">
-            <form action="#">
+            <form action="#" class="borderbox">
                 <label for="size"></label>
-                <select name="size" id="size">
+                <select name="size" id="size" class="sizecd">
                     <option value="전체사이즈">전체사이즈</option>
                     <option value="GK/그레이트킹">GK/그레이트킹</option>
                     <option value="LK/라지킹">LK/라지킹</option>
@@ -92,35 +92,36 @@
                     <option value="W CLASS/소프트타입">W CLASS/소프트타입</option>
                 </select>
                 </div>
-
-                <input type="text" placeholder="찾으시는 상품을 검색하세요.">
-
-                <button>돋보기</button>
+                
+                <input type="text" class="found" placeholder="찾으시는 상품을 검색하세요.">
+                <button class="see"><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></button>
             </form>
         </div>
         <section class="product_slidewrapper">
             <div class="category">
-            <h2>MATTRESS</h2>
-            <a href="" class="btn">Shop Now <i class="fa-solid fa-arrow-right-long"></i></a> 
+                <div class="MATTRESS">
+                    <h2>MATTRESS</h2>
+                    <a href="" class="btn">Shop Now <i class="fa-solid fa-arrow-right-long"></i></a> 
+                </div>
             <ul class="mattress_list">
-                <li>
                     <figure>
                         <!-- <img src="" alt="">img mattress 1  -->
-                        <figcaption>
+                        <!-- <figcaption>
                             <span>Beautyrest henry</span>
                             <span>0,000$</span>
                             <span>Shop Now <i class="fa-solid fa-arrow-right-long"></i></span>
-                        </figcaption>
+                        </figcaption> -->
                     </figure>
-                </li>
             </ul>
             </div>
+        </section>
+        <!-- 
             <h2>FRAME</h2>
             <a href="" class="btn">Shop Now <i class="fa-solid fa-arrow-right-long"></i></a>
             <ul class="frame_list">
                 <li>
                     <figure>
-                        <!-- <img src="" alt=""> -->
+                        <img src="" alt="">
                         <figcaption>
                             <span>Beautyrest henry</span>
                             <span>0,000$</span>
@@ -134,7 +135,7 @@
             <ul class="roomset_list">
                 <li>
                     <figure>
-                        <!-- <img src="" alt=""> -->
+                        <img src="" alt="">
                         <figcaption>
                             <span>Beautyrest henry</span>
                             <span>0,000$</span>
@@ -151,7 +152,7 @@
                 <li class="tab_link" data-value="tab-1">
                     Beautyrest
                     <figure>
-                        <!-- <img src="" alt=""> -->
+                         <img src="" alt=""> 
                         <figcaption>
                             <p>SIMMONS</p>
                             <h3>Beautyrest</h3>
@@ -200,6 +201,6 @@
             </div>
         </div>
         <p>Contact to : master @ simmons.co.kr</p>
-    </footer>
+    </footer> -->
 </body>
 </html>
