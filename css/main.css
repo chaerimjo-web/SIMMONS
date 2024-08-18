@@ -3,9 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root {
-    --container: 1200px;
+    --container: 1320px;
     --txt-color: #000000;
-} 
+}
 
 /* Reset default margin */
 * {
@@ -84,7 +84,7 @@ nav ul li {
     gap: 42px;
 }
 
-.icon:hover > ul {
+.icon:hover>ul {
     display: block;
     text-align: center;
 }
@@ -169,7 +169,8 @@ nav ul li {
     margin: 0 0 10px 600px;
 }
 
-select, .found {
+select,
+.found {
     border: none;
     border-bottom: 1px solid #000000;
 }
@@ -250,17 +251,28 @@ select, .found {
     position: relative;
 }
 
-.mt_list div {
-    display: flex;
+.mt_list .mt {
+    display: none;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
-}
-
-.mt_list .mt {
+    height: 100%;
+    vertical-align: middle;
     gap: 10px;
     transition: 0.3s;
+    
+    /* display: none; */
+}
+.mtl:hover > .mt{
+    display: flex;
+    text-align: center;
+    gap: 10px;
+    background: rgba(0,0,0,.5);
+}
+.mtl button:hover {
+    background: rgba(140, 157, 150, .7);
+    transition:ease-out 0.3s;
 }
 
 .mt_list .mtl {
@@ -283,7 +295,7 @@ select, .found {
     color: #fff;
 }
 
-.mt_list button > a {
+.mt_list button>a {
     color: #fff;
 }
 
