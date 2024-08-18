@@ -15,14 +15,13 @@ font-family: "Roboto", sans-serif; */
 
 /* 레이아웃 */
 * {
-    padding: 0;
     margin: 0;
 }
 .container{
     width: var(--container);
+    width: 80%;
     margin: 0 auto;
 }
-
 /* 폰트*/
 
 /* HEADER */
@@ -40,30 +39,27 @@ font-family: "Roboto", sans-serif; */
     background: white;
     box-shadow: 0 0 10px rgba(0,0,0,.3);
 }
-header > .slidewrapper {
+header .slidewrapper {
     margin-bottom: 180px;
 }
 header nav{
     display: flex;
-    padding-top: 35px;
     justify-content: space-between;
+    padding-top: 40px;
 }
- a{
+a{
     color: #333;
     text-decoration: none;
- }
+}
 
  /* NAV */
- nav ul{
-    position: relative;
-}
- nav ul li{
+nav ul li{
     list-style: none;
- }
- .container ul li{
+}
+.container ul li{
     width: 140px;
     position: relative;
- }
+}
 .container ul li ul{
     width: 140px;
     position: absolute;
@@ -71,26 +67,26 @@ header nav{
     display: none;
     background:rgba(51, 51, 51, .5);
     border: 1px solid black;
- }
- .dropdown li a{
+}
+.dropdown li a{
     line-height: 40px;
 }
- .container > ul  li:hover > ul{
+.container > ul  li:hover > ul{
     display: block;
     text-align: center;
     top: 30px;
- }
- .container > ul > li > ul > li:hover {
+}
+.container > ul > li > ul > li:hover {
     text-align: center;
     transition: ease 1s;
     font: bold;
     background: #8C9D96;
 }
 
- .icon{
+.icon{
     display: flex;
- }
- .menuLink ul a{
+}
+.menuLink ul a{
     color: white;
 }
 .login li a{
@@ -99,11 +95,11 @@ header nav{
 .menuLink ul a:hover{
     color: #fff;
 }
- .icon .login{
+.icon .login{
     width: 22px;
     height: 35px;
     gap: 42px;
- }
+}
 .icon .login .dropdown{
     width: 140px;
     position: absolute;
@@ -119,66 +115,43 @@ header nav{
     display: flex;
     gap: 65px;
     text-align: center;
- }
- .main_menu li{
+}
+.main_menu li{
     font-weight: bold;
- }
- .main_menu li:hover {
+}
+.main_menu li:hover {
     transition: 0.3s;
- }
+}
+
 
  /* SLIDE */
+
 .slidewrapper {
     position: relative;
     background: url(../images/header_banner_hotel_img.jpg)no-repeat;
-    width: 1920px;
-    height: 500px;
     z-index: -1;
-    position: relative;
-}
-.slidewrapper img{
-    height: 100%;
+    background-size: 100% 500px; 
+    height: 500px;
 }
 
-.text{
-    display: inline-block;
-    color: white;
-    width: 366px;
-    height: 266px;
-}
 
-.button{
-    width: 32px;
-    height: 62px;
-    background: white transparent;
-    border: none;
-    cursor: pointer;
-}
-.slidewrapper{
-    justify-content: space-between;
-    display: flex;
-    width: 100%;
-    position: relative;
+.slidewrapper .fbutton{
+    
 }
 .slidewrapper .fbutton{
     top: 50%;
     position: absolute;
 }
-.slidewrapper .left{
-    left: 100px;
-}
 .slidewrapper .right{
     right: 100px;
 }
-.button{
-    cursor: pointer;
-    background: transparent;
+.slidewrapper .left{
+    left: 100px;
 }
 
 /* 검색버튼 */
 .search{
     width: var(--container);
-    margin-bottom: -200px;
     height: 50px;
 }
 .search .borderbox{
@@ -188,6 +161,9 @@ header nav{
     position: absolute;
     margin: 0px 0px 10px 600px;
 
+}
+.product_slidewrapper{
+    margin-top: 0;
 }
 #size{
     width: 155px;
@@ -221,74 +197,119 @@ select, .found{
 }
 
 /* product slide */
-.category{
-    display: inline-block;
+
+.product_slidewrapper{
+    display: flex;
 }
-.PD_mattress{
+.PD_mattress div{
     width: 197px;
-    margin-top: 100px;
+    height: 120px;
 }
 .PD_mattress h2{
     font-size: 30px;
     /* position: relative; */
-    margin-bottom: 19px;
+    margin-top: 150px;
     text-align: center;
     display: block;
     font-family: "Roboto Slab", serif;
     font-weight: 300;
-
 }
 .PD_mattress button{
     display: inline-block;
     font-size: 22px;
     border: 1px solid #000000;
     background: #fff;
-    text-align: center;
     padding: 15px 30px ;
     /* position: absolute; */
     font-family: "Overpass", sans-serif;
-    margin-top: 18px;
+    margin-top: 22px;
+    width: 197px;
+    height: 57px;
+    
 }
 .PD_mattress button:hover{
     background: rgba(140, 157, 150,.5);
     transition: 0.3s;
 }
-.PD_mattress a:hover{
-    color: white;
-}
-.PD_mattress h2{
-    margin-top: 100px;
-}
 .mt_list {
-    padding: 0 0 0 253px;
-    /* margin-top: 0; */
+    padding: 0 0 0 55px;
+    display: flex;
+    gap: 20px;
+    position: relative;
+
 }
-.product_slidewrapper{
-    padding-top: 0;
+.mt_list div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+.mt_list .mt{
+    gap: 10px;
+    
+    transition: 0.3s;
+}
+.mtlist1:hover .mt{
+    display: block;
+    text-align: center;
+    transition: 0.3s;
+    transition: ease 1s;
+}
+.mtlist1:hover{
+    background: 0 0 15px rgba(0,0,0,.2);
+}
+.mtlist1 button:hover{
+    text-align: center;
+    transition: ease 1s;
+    font: bold;
+    background: rgba(140, 157, 150,.7);
 }
 .mattress_list span{
     color: #fff;
 }
 .mtlist1{
-    background: url(/images/mattress.cap.png)no-repeat;
-    width: 330px;
-    height: 480px;
+}
+.mtlist1{
+    background: url(../images/mattress.cap.png)no-repeat;
 }
 .mtlist2{
-    background: url(/images/mts2.png)no-repeat;
+    background: url(../images/mts2.png)no-repeat;
 }
 .mtlist3{
-    background: url(/images/mts3.png)no-repeat;
+    background: url(../images/mts3.png)no-repeat;
 }
-.category *{
+.mtlist4{
+    background: url(../images/mattress3.jpg)no-repeat;
+}
+.product_slidewrapper{
+    height: 480px;
+}
+.mt_list .mtl{
     width: 330px;
     height: 480px;
     list-style: none;
-    display: flex;
-    gap: 25px;
+    gap: 20px;
+}
+
+.mt_list button{
+    display: inline-block;
+    font-size: 22px;
+    border: 1px solid #fff;
+    background: none;
+    text-align: center;
+    padding: 15px 30px ;
+    width: 200px;
+    height: 50px;
+    font-family: "Overpass", sans-serif;
+    color: #fff;
+}
+
+.mt_list button > a{
+    color: #fff;
 }
 .mt_list h4{
-    font-size: 25px;
+    font-size: 22px;
     line-height: 20px;
     align-items: center;
     text-align: center;
@@ -297,7 +318,7 @@ select, .found{
     font-weight: 300;
 }
 .mt_list p{
-    font-size: 22px;
+    font-size: 20px;
     color: #fff;
     font-weight: 200;
     font-family: "Overpass", sans-serif;

@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+    <div class="screen">
     <header>
-    <div class="top_nav">
-        <nav class="container">
-            <h1 class="logo"><a href="">SIMMONS</a></h1>
+        <div class="top_nav">
+            <nav class="container">
+                <h1 class="logo"><a href="">SIMMONS</a></h1>
                 <ul class="main_menu">
                     <li class="menuLink"><a href="">Product</a>
                         <ul class="dropdown">
@@ -53,7 +54,6 @@
                 </ul>
             </nav>
         </div>
-    </div> 
         <div class="slidewrapper">
             <div class="slidebtn">
                 <button class="fbutton left"><a href=""><i class="fa-solid fa-chevron-left"></i></a></button>
@@ -74,55 +74,66 @@
     <div class="search">
         <form action="#" class="borderbox">
             <label for="size">
-            <select name="size" id="size" class="sizecd">
-                <option value="전체사이즈">전체사이즈</option>
-                <option value="GK/그레이트킹">GK/그레이트킹</option>
-                <option value="LK/라지킹">LK/라지킹</option>
-                <option value="QE/퀸">QE/퀸</option>
-                <option value="SS/슈퍼싱글">SS/슈퍼싱글</option>
-            </select>
-        </label>
-    <div class="hardness">
-            <label for="hardness">
-            <select name="hardness" id="hardness">
-                <option value="전체경도">전체경도</option>
-                <option value="P CLASS/하드타입">P CLASS/하드타입</option>
-                <option value="G CLASS/레귤러타입">G CLASS/레귤러타입</option>
-                <option value="W CLASS/소프트타입">W CLASS/소프트타입</option>
-            </select>
+                <select name="size" id="size" class="sizecd">
+                    <option value="전체사이즈">전체사이즈</option>
+                    <option value="GK/그레이트킹">GK/그레이트킹</option>
+                    <option value="LK/라지킹">LK/라지킹</option>
+                    <option value="QE/퀸">QE/퀸</option>
+                    <option value="SS/슈퍼싱글">SS/슈퍼싱글</option>
+                </select>
             </label>
-        </div>
+            <div class="hardness">
+                <label for="hardness">
+                    <select name="hardness" id="hardness">
+                        <option value="전체경도">전체경도</option>
+                        <option value="P CLASS/하드타입">P CLASS/하드타입</option>
+                        <option value="G CLASS/레귤러타입">G CLASS/레귤러타입</option>
+                        <option value="W CLASS/소프트타입">W CLASS/소프트타입</option>
+                    </select>
+                </label>
+            </div>
             <input type="text" class="found" placeholder="찾으시는 상품을 검색하세요.">
             <button class="see"><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></button>
         </form>
     </div>
-    </section>
+</section>
     <section class="product_slidewrapper container">
         <div class="PD_mattress">
-            <h2>MATTRESS</h2>
-            <button>
-            <a href="" class="btn">Shop Now <i class="fa-solid fa-arrow-right-long"></i></a> 
-            </button>
-        </div>
-        <div class="category">
-            <div class="mt_list">
-                <div class="mtlist1">
-                   <h4>N32 Spring Mattress Regular</h4>
-                    <p>2,200,000$</p>
-                    <a href="">Shop Now <i class="fa-solid fa-arrow-right-long"></i></a>
-                </div>
-                <div class="mtlist2">
-                   <h4>N32 Spring Mattress Soft</h4>
-                    <p>2,400,000$</p>
-                    <span><a href="">Shop Now <i class="fa-solid fa-arrow-right-long"></i></a></span> 
-                </div>
-                <div class="mtlist3">
-                  <h4>N32 Spring Mattress Hard</h4>
-                    <p>2,020,000$</p>
-                    <span><a href="">Shop Now <i class="fa-solid fa-arrow-right-long"></i></a></span> 
-                </div>
+            <div>
+                <h2>MATTRESS</h2>
+                <button><a href="">Shop Now <i class="fa-solid fa-arrow-right-long"></i></a></button>
             </div>
         </div>
+    <div class="category">
+        <div class="mt_list">
+            <div class="mtlist1 mtl">
+                <div class="mt">
+                    <h4>N32 Spring Mattress Regular</h4>
+                    <p>2,200,000$</p>
+                    <button><a href="">Shop Now <i class="fa-solid fa-arrow-right-long"></i></a></button>
+                </div>
+            </div>
+            <div class="mtlist2 mtl">
+                <div class="mt">
+                    <h4>N32 Spring Mattress Soft</h4>
+                    <p>2,400,000$</p>
+                    <button><a href="">Shop Now <i class="fa-solid fa-arrow-right-long"></i></a></button>
+                </div>
+            </div>
+            <div class="mtlist3 mtl">
+                <div class="mt">
+                    <h4>N32 Spring Mattress Hard</h4>
+                    <p>2,020,000$</p>
+                    <button><a href="">Shop Now <i class="fa-solid fa-arrow-right-long"></i></a></button>
+                </div>
+            </div>
+            <div class="mtlist4 mtl">
+                <h4>Beautyrest Zalmon</h4>
+                <p>7,800,000$</p>
+                <button><a href="">Shop Now <i class="fa-solid fa-arrow-right-long"></i></a></button>
+            </div>
+        </div>
+    </div>
     </section>
     <!-- 
             <h2>FRAME</h2>
@@ -161,7 +172,7 @@
                 <li class="tab_link" data-value="tab-1">
                     Beautyrest
                     <figure>
-                         <img src="" alt=""> 
+                        <img src="" alt=""> 
                         <figcaption>
                             <p>SIMMONS</p>
                             <h3>Beautyrest</h3>
@@ -171,7 +182,7 @@
                         </figcaption>
                     </figure>
                 </li>
-                </ul>
+            </ul>
         </section>
     </main> 
     <footer>
@@ -211,5 +222,6 @@
         </div>
         <p>Contact to : master @ simmons.co.kr</p>
     </footer> -->
+    </div>
 </body>
 </html>
