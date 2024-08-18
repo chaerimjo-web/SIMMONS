@@ -2,326 +2,321 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-:root{
+:root {
+    --container: 1200px;
     --txt-color: #000000;
-    --container : 1380px;
-}
+} 
 
-/* font-family: "Overpass", sans-serif;
-font-family: "Montserrat", sans-serif;
-font-family: "Raleway", sans-serif;
-font-family: "Roboto", sans-serif; */
-
-
-/* 레이아웃 */
+/* Reset default margin */
 * {
     margin: 0;
 }
-.container{
+
+/* Container styling */
+.container {
     width: var(--container);
-    width: 80%;
     margin: 0 auto;
 }
-/* 폰트*/
 
-/* HEADER */
-/* 로고 */
-.logo a{
-    background: url(../images/header_logo.png)no-repeat;
+/* Header */
+header .slidewrapper {
+    margin-bottom: 180px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+.top_nav {
+    height: 100px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+}
+
+.logo a {
+    background: url(../images/header_logo.png) no-repeat;
     width: 79px;
     height: 52px;
     text-decoration: none;
     text-indent: -9999em;
     display: block;
 }
-.top_nav{
-    height: 100px;
-    background: white;
-    box-shadow: 0 0 10px rgba(0,0,0,.3);
-}
-header .slidewrapper {
-    margin-bottom: 180px;
-}
-header nav{
-    display: flex;
-    justify-content: space-between;
-    padding-top: 40px;
-}
-a{
+
+a {
     color: #333;
     text-decoration: none;
 }
 
- /* NAV */
-nav ul li{
+/* Navigation */
+nav ul li {
     list-style: none;
 }
-.container ul li{
+
+.container ul li {
     width: 140px;
     position: relative;
-}
-.container ul li ul{
-    width: 140px;
-    position: absolute;
-    font-size: 14px;
-    display: none;
-    background:rgba(51, 51, 51, .5);
-    border: 1px solid black;
-}
-.dropdown li a{
-    line-height: 40px;
-}
-.container > ul  li:hover > ul{
-    display: block;
     text-align: center;
-    top: 30px;
-}
-.container > ul > li > ul > li:hover {
-    text-align: center;
-    transition: ease 1s;
-    font: bold;
-    background: #8C9D96;
 }
 
-.icon{
-    display: flex;
+.menuLink:hover .dropdown li {
+    display: block;
+    text-align: center;
+    top: 10px;
 }
-.menuLink ul a{
+
+.menuLink ul a {
     color: white;
 }
-.login li a{
-    color: white;
-}
-.menuLink ul a:hover{
+
+.menuLink ul a:hover {
     color: #fff;
 }
-.icon .login{
+
+.icon {
+    display: flex;
+}
+
+.icon .login {
     width: 22px;
     height: 35px;
     gap: 42px;
 }
-.icon .login .dropdown{
-    width: 140px;
-    position: absolute;
-    background: #333;
-    border: 1px solid black;
-}
-.icon:hover > ul{
+
+.icon:hover > ul {
     display: block;
     text-align: center;
 }
 
-.main_menu{
+.login li a {
+    color: white;
+}
+
+/* Dropdown menu */
+.dropdown {
+    padding: 0;
+}
+
+.dropdown li {
+    width: 140px;
+    position: absolute;
+    font-size: 14px;
+    display: none;
+    border: 1px solid black;
+    background: #333;
+}
+
+.dropdown li a {
+    line-height: 40px;
+}
+
+.dropdown li:hover {
+    background: #8C9D96;
+    font-weight: bold;
+    transition: ease 1s;
+}
+
+/* Main menu */
+.main_menu {
     display: flex;
-    gap: 65px;
     text-align: center;
 }
-.main_menu li{
+
+.main_menu li {
     font-weight: bold;
+    gap: 65px;
 }
+
 .main_menu li:hover {
     transition: 0.3s;
 }
 
-
- /* SLIDE */
-
+/* Slide */
 .slidewrapper {
     position: relative;
-    background: url(../images/header_banner_hotel_img.jpg)no-repeat;
-    z-index: -1;
-    background-size: 100% 500px; 
+    background: url(../images/header_banner_hotel_img.jpg) no-repeat;
+    background-size: 100% 500px;
     height: 500px;
+    z-index: -1;
 }
 
-
-.slidewrapper .fbutton{
-    
-}
-.slidewrapper .fbutton{
-    top: 50%;
+.slidewrapper .fbutton {
     position: absolute;
+    top: 50%;
 }
-.slidewrapper .right{
-    right: 100px;
-}
-.slidewrapper .left{
+
+.slidewrapper .left {
     left: 100px;
 }
 
-/* 검색버튼 */
-.search{
+.slidewrapper .right {
+    right: 100px;
+}
+
+/* Search */
+.search {
     width: var(--container);
     height: 50px;
+    position: relative;
 }
-.search .borderbox{
+
+.search .borderbox {
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
-    margin: 0px 0px 10px 600px;
+    margin: 0 0 10px 600px;
+}
 
-}
-.product_slidewrapper{
-    margin-top: 0;
-}
-#size{
-    width: 155px;
-    height: 25px;
-}
-#hardness{
-    margin-left: 40px;
-}
-#hardness{
-    width: 170px;
-    height: 25px;
-}
-.found{
-    height: 25px;
-    width: 220px;
-    border: none;
-    border: 1px solid gray;
-    text-align: center;
-    margin-left: 170px;
-    margin-right:10px;
-}
-select, .found{
+select, .found {
     border: none;
     border-bottom: 1px solid #000000;
 }
-.see{
+
+#size {
+    width: 155px;
+    height: 25px;
+}
+
+#hardness {
+    width: 170px;
+    height: 25px;
+    margin-left: 40px;
+}
+
+.found {
+    height: 25px;
+    width: 220px;
+    border: 1px solid gray;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.see {
     width: 30px;
     height: 30px;
     border: 1px solid #8C9D96;
     color: black;
 }
 
-/* product slide */
-
-.product_slidewrapper{
+/* Product slide */
+.product_slidewrapper {
     display: flex;
+    height: 480px;
 }
-.PD_mattress div{
+
+.PD_mattress {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.PD_mattress div {
     width: 197px;
     height: 120px;
 }
-.PD_mattress h2{
+
+.PD_mattress h2 {
     font-size: 30px;
-    /* position: relative; */
     margin-top: 150px;
     text-align: center;
-    display: block;
     font-family: "Roboto Slab", serif;
     font-weight: 300;
 }
-.PD_mattress button{
+
+.PD_mattress button {
     display: inline-block;
     font-size: 22px;
     border: 1px solid #000000;
     background: #fff;
-    padding: 15px 30px ;
-    /* position: absolute; */
+    padding: 15px 30px;
     font-family: "Overpass", sans-serif;
     margin-top: 22px;
     width: 197px;
     height: 57px;
-    
 }
-.PD_mattress button:hover{
-    background: rgba(140, 157, 150,.5);
+
+.PD_mattress button:hover {
+    background: rgba(140, 157, 150, .5);
     transition: 0.3s;
 }
+
+/* Mattress list */
 .mt_list {
     padding: 0 0 0 55px;
     display: flex;
     gap: 20px;
     position: relative;
-
 }
-.mt_list div{
+
+.mt_list div {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
 }
-.mt_list .mt{
+
+.mt_list .mt {
     gap: 10px;
-    
     transition: 0.3s;
 }
-.mtlist1:hover .mt{
-    display: block;
-    text-align: center;
-    transition: 0.3s;
-    transition: ease 1s;
-}
-.mtlist1:hover{
-    background: 0 0 15px rgba(0,0,0,.2);
-}
-.mtlist1 button:hover{
-    text-align: center;
-    transition: ease 1s;
-    font: bold;
-    background: rgba(140, 157, 150,.7);
-}
-.mattress_list span{
-    color: #fff;
-}
-.mtlist1{
-}
-.mtlist1{
-    background: url(../images/mattress.cap.png)no-repeat;
-}
-.mtlist2{
-    background: url(../images/mts2.png)no-repeat;
-}
-.mtlist3{
-    background: url(../images/mts3.png)no-repeat;
-}
-.mtlist4{
-    background: url(../images/mattress3.jpg)no-repeat;
-}
-.product_slidewrapper{
-    height: 480px;
-}
-.mt_list .mtl{
+
+.mt_list .mtl {
     width: 330px;
     height: 480px;
     list-style: none;
     gap: 20px;
 }
 
-.mt_list button{
+.mt_list button {
     display: inline-block;
     font-size: 22px;
     border: 1px solid #fff;
     background: none;
     text-align: center;
-    padding: 15px 30px ;
+    padding: 15px 30px;
     width: 200px;
     height: 50px;
     font-family: "Overpass", sans-serif;
     color: #fff;
 }
 
-.mt_list button > a{
+.mt_list button > a {
     color: #fff;
 }
-.mt_list h4{
+
+.mt_list h4 {
     font-size: 22px;
     line-height: 20px;
-    align-items: center;
     text-align: center;
     color: #fff;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
 }
-.mt_list p{
+
+.mt_list p {
     font-size: 20px;
     color: #fff;
     font-weight: 200;
     font-family: "Overpass", sans-serif;
-    align-items: center;
     text-align: center;
+}
+
+/* Background images for mattress list */
+.mtlist1 {
+    background: url(../images/mattress.cap.png) no-repeat;
+}
+
+.mtlist2 {
+    background: url(../images/mts2.png) no-repeat;
+}
+
+.mtlist3 {
+    background: url(../images/mts3.png) no-repeat;
+}
+
+.mtlist4 {
+    background: url(../images/mattress3.jpg) no-repeat;
 }
