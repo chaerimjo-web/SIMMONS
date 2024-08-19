@@ -84,7 +84,7 @@ nav ul li {
     gap: 42px;
 }
 
-.icon:hover>ul {
+.icon:hover ul {
     display: block;
     text-align: center;
 }
@@ -128,10 +128,6 @@ nav ul li {
     gap: 65px;
 }
 
-.main_menu li:hover {
-    transition: 0.3s;
-}
-
 /* Slide */
 .slidewrapper {
     position: relative;
@@ -139,6 +135,7 @@ nav ul li {
     background-size: 100% 500px;
     height: 500px;
     z-index: -1;
+    width: 100%;
 }
 
 .slidewrapper .fbutton {
@@ -168,9 +165,11 @@ nav ul li {
     position: absolute;
     margin: 0 0 10px 600px;
 }
+.borderbox option{
+    background: rgba(140, 157, 150, .5);
+}
 
-select,
-.found {
+select{
     border: none;
     border-bottom: 1px solid #000000;
 }
@@ -189,11 +188,11 @@ select,
 .found {
     height: 25px;
     width: 220px;
-    border: 1px solid gray;
     text-align: center;
-    margin: 0 10px;
+    margin: 0 10px 0 30px;
+    border: none;
+    border-bottom: 1px solid #000;
 }
-
 .see {
     width: 30px;
     height: 30px;
@@ -205,6 +204,7 @@ select,
 .product_slidewrapper {
     display: flex;
     height: 480px;
+    margin-top: 120px;
 }
 
 .PD_mattress {
@@ -241,6 +241,12 @@ select,
 .PD_mattress button:hover {
     background: rgba(140, 157, 150, .5);
     transition: 0.3s;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, .3); */
+    border: 1px solid #000000;
+}
+.PD_mattress button:hover a{
+    transition: 0.3s;
+    color: #fff;
 }
 
 /* Mattress list */
@@ -249,6 +255,7 @@ select,
     display: flex;
     gap: 20px;
     position: relative;
+    /* margin-top: 50px; */
 }
 
 .mt_list .mt {
@@ -259,16 +266,20 @@ select,
     margin: 0 auto;
     height: 100%;
     vertical-align: middle;
-    gap: 10px;
+    /* gap: 10px; */
     transition: 0.3s;
     
     /* display: none; */
 }
-.mtl:hover > .mt{
+.mtl:hover .mt{
     display: flex;
     text-align: center;
     gap: 10px;
     background: rgba(0,0,0,.5);
+}
+.mtl:hover{
+    margin-top: -50px;
+    transition: 0.3s ease;
 }
 .mtl button:hover {
     background: rgba(140, 157, 150, .7);
@@ -279,7 +290,8 @@ select,
     width: 330px;
     height: 480px;
     list-style: none;
-    gap: 20px;
+    /* gap: 20px; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
 }
 
 .mt_list button {
@@ -315,20 +327,20 @@ select,
     font-family: "Overpass", sans-serif;
     text-align: center;
 }
-
 /* Background images for mattress list */
 .mtlist1 {
-    background: url(../images/mattress.cap.png) no-repeat;
+    background: url(../images/copy1.jpg) no-repeat;
 }
 
 .mtlist2 {
-    background: url(../images/mts2.png) no-repeat;
+    background: url(../images/copy1.jpg) no-repeat;
 }
 
 .mtlist3 {
-    background: url(../images/mts3.png) no-repeat;
+    background: url(../images/copy1.jpg) no-repeat;
 }
 
 .mtlist4 {
-    background: url(../images/mattress3.jpg) no-repeat;
+    background: url(../images/copy1.jpg) no-repeat;
+    display: none;
 }
