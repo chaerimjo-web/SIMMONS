@@ -43,6 +43,19 @@ header nav {
     text-indent: -9999em;
     display: block;
 }
+.slides h2{
+    font-family: "Roboto Slab";
+}
+.slides p{
+    font-family: 'Montserrat';
+}
+.slides span{
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    width: 530px;
+    margin: 240px 0 0 350px;
+}
 
 a {
     color: #333;
@@ -104,7 +117,7 @@ nav ul li {
     font-size: 14px;
     display: none;
     border: 1px solid black;
-    background: #333;
+    background: rgba(41, 40, 40, 0.7);
 }
 
 .dropdown li a {
@@ -204,7 +217,7 @@ select{
 .product_slidewrapper {
     display: flex;
     height: 480px;
-    margin-top: 120px;
+    margin-top: 70px;
 }
 
 .PD_mattress {
@@ -241,8 +254,7 @@ select{
 .PD_mattress button:hover {
     background: rgba(140, 157, 150, .5);
     transition: 0.3s;
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, .3); */
-    border: 1px solid #000000;
+    border: 1px solid rgb(100, 100, 100);
 }
 .PD_mattress button:hover a{
     transition: 0.3s;
@@ -255,10 +267,40 @@ select{
     display: flex;
     gap: 20px;
     position: relative;
-    /* margin-top: 50px; */
 }
-
-.mt_list .mt {
+.whole{
+    position: relative;
+}
+.imtext{
+    position: absolute;
+    top: 100px;
+    color: #fff;
+    font-size: 25px;
+    font-family: "Roboto Slab";
+    font-weight: 300;
+    white-space: nowrap;
+    left: 20px;
+    top: 180px;
+    line-height: 40px;
+    /* display: none; */
+}
+.img:hover .imtext{ 
+    display: flex;
+    text-align: center;
+    gap: 10px;
+    background: rgba(0,0,0,.5);
+}
+.PD_mattress li{
+    list-style: none;
+}
+.imtext button{
+    background: transparent;
+    border: 1px solid #fff;
+}
+.imtext button a{
+    color: #fff;
+}
+/* .mt_list .mt {
     display: none;
     justify-content: center;
     flex-direction: column;
@@ -266,10 +308,13 @@ select{
     margin: 0 auto;
     height: 100%;
     vertical-align: middle;
-    /* gap: 10px; */
     transition: 0.3s;
-    
-    /* display: none; */
+} */
+/* .mt_list .mt12{
+    display: flex;
+    text-align: center;
+    gap: 10px;
+    background: rgba(0,0,0,.5);
 }
 .mtl:hover .mt{
     display: flex;
@@ -290,9 +335,8 @@ select{
     width: 330px;
     height: 480px;
     list-style: none;
-    /* gap: 20px; */
     box-shadow: 0 0 10px rgba(0, 0, 0, .5);
-}
+} */
 
 .mt_list button {
     display: inline-block;
@@ -329,9 +373,10 @@ select{
 }
 /* Background images for mattress list */
 .mtlist1 {
-    background: url(../images/copy1.jpg) no-repeat;
+    /* background: url(../images/copy1.jpg) no-repeat; */
 }
-
+.mtlist1 img{
+}
 .mtlist2 {
     background: url(../images/copy1.jpg) no-repeat;
 }
@@ -343,4 +388,26 @@ select{
 .mtlist4 {
     background: url(../images/copy1.jpg) no-repeat;
     display: none;
+}
+.tabs{
+    background: url(../images/tab3.jpg)no-repeat;
+    background-size: 100% 500px;
+    height: 500px;
+    z-index: -1;
+    margin-top: 150px;
+    position: relative;
+}
+.tabs .tab_link{
+    position: absolute;
+    color: #fff;
+    display: inline-block;
+    width: 200px;
+    display: flex;
+    text-align: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    top: calc(50% - 75px); left: calc(50% - 100px);
+    /* margin: 0 auto; */
+    /* vertical-align: middle; */
+    line-height: 30px;
 }
