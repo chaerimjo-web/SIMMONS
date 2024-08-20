@@ -309,7 +309,7 @@ select{
 /* Background images for mattress list */
 
 .tabs{
-    z-index: -1;
+    /* z-index: -1; */
     margin-top: 150px;
     position: relative;
 }
@@ -335,7 +335,6 @@ select{
     display: none;
 }
 #tabs-1 img{
-    width: var(--container);
     height: 500px;
     margin: 0 auto;
     position: relative;
@@ -352,4 +351,54 @@ select{
     width: 200px;
     line-height: 30px;
     bottom: 50%;
+}
+
+/* FOOTER */
+footer .company{
+    width: 200px;
+    text-align: center;
+    margin-right: 130px;
+}
+footer .company h2{
+    margin-bottom: 50px;
+    font-family: "Roboto Slab";
+    font-size: 30px;
+    padding-left: 40px;
+    text-decoration: underline;
+}
+footer .sns {
+    display: flex;
+}
+.sns a{
+    color: #fff;
+}
+footer .sns li{
+    display: inline-block;
+    text-align: center;
+    width: 60px;
+}
+footer > div{
+    margin-top: 50px;
+    display: flex;
+    padding: 60px 0;
+    justify-content: center;
+    color: #D9CEC1;
+    background: rgba(0,0,0,.8);
+}
+footer nav{
+    display: flex;
+    text-align: center;
+    gap: 130px;
+}
+footer nav dt{
+    font-size: 24px;
+    font-family: "Roboto Slab";
+    letter-spacing: 5px;
+    margin-bottom: 30px;
+}
+footer nav dd{
+    font-size: 16px;
+    font-family: "Roboto Slab";
+    letter-spacing: 1px;
+    margin-bottom: 20px;
 }
