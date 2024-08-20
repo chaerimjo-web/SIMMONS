@@ -70,9 +70,12 @@ a {
     position: relative;
     text-align: center;
     list-style: none;
+    width: 180px;
 }
-.menuLink ul a {
-    color: white;
+.menuLink {
+    font-size: 22px;
+    /* margin-left: 30px; */
+    gap: 30px;
 }
 
 .menuLink:hover .dropdown li {
@@ -103,24 +106,25 @@ a {
 /* Dropdown menu */
 .dropdown {
     padding: 0;
+    transition: ease 0.3s;
+
 }
 
 .dropdown li {
-    width: 140px;
     position: absolute;
-    font-size: 14px;
+    font-size: 16px;
     display: none;
     border: 1px solid black;
     background: rgba(41, 40, 40, 0.7);
     transition: ease 0.3s;
 }
 .dropdown li a {
-    line-height: 40px;
+    line-height: 45px;
+    color: white;
 }
 
 .dropdown li:hover {
-    background: #8C9D96;
-    font-weight: bold;
+    background:rgba(140, 157, 150, .9);
 }
 /* Main menu */
 .main_menu {
@@ -128,9 +132,6 @@ a {
     text-align: center;
 }
 
-.main_menu li {
-    gap: 65px;
-}
 /* Slide */
 .slidewrapper {
     position: relative;
@@ -199,7 +200,7 @@ select{
 .see {
     width: 30px;
     height: 30px;
-    border: 1px solid #8C9D96;
+    /* border: 1px solid #8C9D96; */
     color: black;
 }
 
@@ -243,7 +244,7 @@ select{
 }
 
 .PD_mattress button:hover, .pdinfo button:hover {
-    background: rgba(140, 157, 150, .5);
+    background: rgba(140, 157, 150, .8);
     border: 1px solid  white;
     color: #fff;
 }
@@ -253,7 +254,7 @@ select{
 .pdinfo{
     list-style: none;
     transition: 0.3s ease;
-    padding-left: 60px;
+    padding-left: 45px;
     display: flex;
     margin-right: 150px;
 }
@@ -272,14 +273,12 @@ select{
 }
 .whole span{
     position: absolute;
-    /* display: inline-block; */
     top: 100px;
     color: #fff;
     font-size: 22px;
     font-family: "Roboto Slab";
     font-weight: 300;
-    /* white-space: nowrap; */
-    left: 45%;
+    left: 40%;
     top: 160px;
     line-height: 40px;
     opacity: 0;
@@ -314,36 +313,40 @@ select{
     margin-top: 150px;
     position: relative;
 }
-.tab-wrapper ul{
+.tab-menu {
     display: flex;
     justify-content: center;
-}
-.tab-menu{
-    padding: 0;
+    gap: 50px;
 }
 .tab-menu li{
     list-style: none;
-    font-size: 25px;
-    font-family: "Raleway", sans-serif;
-    /* margin-bottom: 10px; */
-    /* margin-left: 25px; */
-    /* border-bottom: 10px solid #8C9D96; */
+    border-bottom: 5px solid gray;
+    font-family: "Overpass", sans-serif;
 }
-.tab-menu a{
-    gap: 20px;
+.tab-menu li a{
+    letter-spacing: 2px;
+    color: gray; 
 }
-.event1 img{
-    width: 100%;
+.tab-menu li a.active{
+    color: black;
+    border-bottom: 5px solid black;
+}
+#tab-content span{
+    display: none;
+}
+#tabs-1 img{
+    width: var(--container);
     height: 500px;
+    margin: 0 auto;
     position: relative;
 }
-.event1{
+#tabs-1{
     display: flex;
     text-align: center;
     flex-direction: column;
     justify-content: center;
 }
-.event1 span{
+#tabs-1 span{
     position: absolute;
     color: #fff;
     width: 200px;
