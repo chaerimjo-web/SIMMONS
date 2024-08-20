@@ -1,3 +1,4 @@
+
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
@@ -51,7 +52,7 @@ header nav {
 .slides p{
     font-family: 'Montserrat';
 }
-.slides span{
+.slides div{
     color: #fff;
     text-align: center;
     display: inline-block;
@@ -136,7 +137,7 @@ a {
 .slidewrapper {
     position: relative;
     background: url(../images/header_banner_hotel_img.jpg) no-repeat;
-    background-size: 100% 500px;
+    background-size: cover;
     height: 500px;
     z-index: -1;
     width: 100%;
@@ -170,7 +171,7 @@ a {
     margin: 0 0 10px 600px;
 }
 .borderbox option{
-    background: rgba(140, 157, 150, .5);
+    background:rgb(233, 234, 252);
 }
 
 select{
@@ -230,20 +231,20 @@ select{
     font-weight: 300;
 }
 
-.PD_mattress button,.pdinfo button {
+.PD_mattress a, .pdinfo a {
     display: inline-block;
     font-size: 22px;
     border: 1px solid #000000;
-    background: #fff;
+    background: transparent;
     padding: 15px 30px;
     font-family: "Overpass", sans-serif;
     margin-top: 22px;
-    width: 197px;
-    height: 57px;
+    width: 130px;
+    height: 35px;
     transition: 0.3s ease;
 }
 
-.PD_mattress button:hover, .pdinfo button:hover {
+.PD_mattress a:hover, .pdinfo a:hover {
     background: rgba(140, 157, 150, .8);
     border: 1px solid  white;
     color: #fff;
@@ -258,7 +259,7 @@ select{
     display: flex;
     margin-right: 150px;
 }
-.pdinfo button{
+.pdinfo a{
     color: #fff;
 }
 .whole,.whole img{
@@ -271,7 +272,7 @@ select{
     box-shadow: 0 0 10px rgba(0, 0, 0, .5);
 
 }
-.whole span{
+.whole div{
     position: absolute;
     top: 100px;
     color: #fff;
@@ -298,16 +299,14 @@ select{
 .PD_mattress li{
     list-style: none;
 }
-.imtext button{
+.imtext a{
     background: transparent;
     border: 1px solid #fff;
-}
-.imtext button a{
     color: #fff;
 }
 
 /* Background images for mattress list */
-
+/* TAB-MENU */
 .tabs{
     /* z-index: -1; */
     margin-top: 150px;
@@ -328,16 +327,16 @@ select{
     color: gray; 
 }
 .tab-menu li a.active{
-    color: black;
-    border-bottom: 5px solid black;
+    /* color: black;
+    border-bottom: 5px solid black; */
 }
 #tab-content span{
     display: none;
 }
 #tabs-1 img{
     height: 500px;
-    margin: 0 auto;
-    position: relative;
+    /* margin: 0 auto; */
+    /* position: relative; */
 }
 #tabs-1{
     display: flex;
