@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded',()=>{
     const goTop = document.querySelector('#go-top');
     
     window.addEventListener('scroll',()=>{
-      let scrollAmt = window.scrollY;
+      let scrollAmt = window.scrollY; 
       console.log(scrollAmt);
     
       if(scrollAmt > 300){
