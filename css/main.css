@@ -73,16 +73,14 @@ a {
 
 /* Navigation */
 .container ul li {
-    width: 140px;
+    /* width: 100px; */
     position: relative;
-    text-align: center;
+    /* text-align: center; */
     list-style: none;
-    width: 180px;
+    width: 160px;
 }
 .menuLink {
     font-size: 22px;
-    /* margin-left: 30px; */
-    gap: 30px;
 }
 
 .menuLink:hover .dropdown li {
@@ -91,30 +89,10 @@ a {
     top: 10px;
 }
 
-.icon {
-    display: flex;
-}
-
-.icon .login {
-    width: 22px;
-    height: 35px;
-    gap: 42px;
-}
-
-.login li a {
-    color: white;
-}
-.icon:hover ul {
-    display: block;
-    text-align: center;
-}
-
-
 /* Dropdown menu */
 .dropdown {
     padding: 0;
     transition: ease 0.3s;
-
 }
 
 .dropdown li {
@@ -137,6 +115,7 @@ a {
 .main_menu {
     display: flex;
     text-align: center;
+    left: 0;
 }
 
 /* Slide */
@@ -310,7 +289,25 @@ select{
     border: 1px solid #fff;
     color: #fff;
 }
-
+#go-top{
+    width: 48px;
+    height: 48px;
+    bottom: 100px;
+    right: 200px;
+    line-height: 48px;
+    position: fixed;
+    border: 1px solid #26231e;
+    text-align: center;
+    color:rgba(38, 35, 30, .7);
+    background:	rgba(217, 206, 193, .5);
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.4s;
+}
+#go-top.active{
+	opacity: 1;
+	pointer-events: auto;
+}
 /* Background images for mattress list */
 /* TAB-MENU */
 .tabs{
