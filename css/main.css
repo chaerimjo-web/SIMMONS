@@ -1,4 +1,3 @@
-
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
@@ -21,7 +20,8 @@
 
 /* Header */
 header .slidewrapper {
-    margin-bottom: 180px;
+    /* margin-bottom: 180px; */
+    position: relative;
 }
 header .slidewrapper a{
     color: #fff;
@@ -46,19 +46,7 @@ header nav {
     text-indent: -9999em;
     display: block;
 }
-.slides h2{
-    font-family: "Roboto Slab";
-}
-.slides p{
-    font-family: 'Montserrat';
-}
-.slides div{
-    color: #fff;
-    text-align: center;
-    display: inline-block;
-    width: 530px;
-    margin: 240px 0 0 350px;
-}
+
 .hidden{
     overflow: hidden;
     width: 0;
@@ -119,28 +107,122 @@ a {
 }
 
 /* Slide */
-.slidewrapper {
+.slides h2{
+    font-family: "Roboto Slab";
+}
+.slides p{
+    font-family: 'Montserrat';
+}
+.slides ul{
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    list-style: none;
+}
+.slides {
     position: relative;
-    background: url(../images/header_banner_hotel_img.jpg) no-repeat;
+    width: 100%;
+    overflow: hidden;
+    height: 600px;
+}
+
+.slide-container {
+    position: absolute;
+    width: 100%;
+    height:100%;
+    margin:0;
+    padding: 0;
+    left: 0;
+    transition:left 0.4s;
+    /* display: flex; */
+}
+.slide-container li {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    /*margin: 0;
+    padding: 0;
+     right: 0; */
+    top: 0;
+    /* background-position: center center; */
+    /* text-align: center;
+    background-size: cover;
+    list-style: none; */
+    /* display: none; */
+}
+.slide-container li.active .contents>*{
+    opacity: 1;
+    color: #fff;
+}
+
+.slidecontainer>li .contents {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.slide-container > li .contents > *{
+    color: white;
+    /* transition: opacity 0.2s 0.4s ease-in-out; */
+    /* opacity: 0; */
+}
+.lrbutton{
+    position: absolute;
+    top: 40%;
+    transform:translateY(-50%);
+    z-index: 999999;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 5px;
+    /* border-radius: 50%; */
+    text-align: center;
+    line-height: 5rem;
+    font-size: 20px;
+    transition: 0.3s ease;
+
+}
+.lrbutton:hover{
+    color: rgba(255, 255, 255, 0.7);
+    background: rgba(140, 157, 150, .5);
+}
+.slide1, .slide2, .slide3{
+    position: relative;
     background-size: cover;
     height: 500px;
     z-index: -1;
     width: 100%;
 }
-
-.slidewrapper .fbutton {
-    position: absolute;
-    top: 50%;
+.slide1{
+    background-image: url(../images/header_banner_hotel_img.jpg);
 }
-
-.slidewrapper .left {
+.slide2{
+    background-image: url(../images/header_banner_hotel_img.jpg);
+}
+.slide3{
+    background-image: url(../images/header_banner_hotel_img.jpg);
+}
+.contents{
+    position: absolute;
+    /* width: 50%; */
+    background: rgba(0, 0,0,.5);
+    width: 30%;
+    left: 30%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+}
+.slidewrapper {
+    position: relative;
+    overflow: hidden;
+}
+.slidewrapper #prev {
     left: 100px;
 }
-
-.slidewrapper .right {
+.slidewrapper #next {
     right: 100px;
 }
-
+.hiddenn {
+    /* display: none; */
+}
 /* Search */
 .search {
     width: var(--container);
@@ -172,7 +254,7 @@ select{
 #hardness {
     width: 170px;
     height: 25px;
-    margin-left: 40px;
+    /* margin-left: 40px; */
 }
 
 .found {
@@ -299,14 +381,14 @@ select{
     border: 1px solid #26231e;
     text-align: center;
     color:rgba(38, 35, 30, .7);
-    background:	rgba(217, 206, 193, .5);
+    background: rgba(217, 206, 193, .5);
     opacity: 0;
     pointer-events: none;
     transition: 0.4s;
 }
 #go-top.active{
-	opacity: 1;
-	pointer-events: auto;
+    opacity: 1;
+    pointer-events: auto;
 }
 /* Background images for mattress list */
 /* TAB-MENU */
@@ -319,6 +401,7 @@ select{
     display: flex;
     justify-content: center;
     gap: 50px;
+    margin-left: -40px;
 }
 .tab-menu li{
     list-style: none;
@@ -330,16 +413,30 @@ select{
     color: gray; 
 }
 .tab-menu li a.active{
-    /* color: black;
-    border-bottom: 5px solid black; */
+    color: black;
+    border-bottom: 5px solid black;
 }
-#tab-content span{
-    display: none;
+#tab-content {
+    position: relative;
+}
+#tabs-1 div{
+    /* display: none; */
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+    left: calc(50% - 60px);
+    top: 60px;
+    color: white;
 }
 #tabs-1 img{
     height: 500px;
     /* margin: 0 auto; */
     /* position: relative; */
+    object-fit: cover;
 }
 #tabs-1{
     display: flex;
@@ -404,3 +501,8 @@ footer nav dd{
     letter-spacing: 1px;
     margin-bottom: 20px;
 }
+
+/* .contents img{
+    width: 1920px;
+    height: 100%;
+} */
