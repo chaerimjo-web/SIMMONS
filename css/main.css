@@ -38,7 +38,10 @@ header .slidewrapper {
 header .slidewrapper a{
     color: #fff;
 }
-
+#prev .hiddenn,
+#next .hiddenn {
+    display: none;
+}
 #prev {
     left: 20px;
 }
@@ -62,7 +65,7 @@ header .slidewrapper a{
     background: rgba(199, 199, 199, 0.5);
 }
 .slidewrapper .lrbutton:hover{
-    background: rgba(140, 157, 150, .5);
+    background: rgba(0,0,0, .5);
 }
 .slide1 {
     background-image: url(../images/header_banner_hotel_img.jpg)
@@ -94,11 +97,13 @@ header .slidewrapper a{
 
 .slide-container>li .contents {
     position: absolute;
-    left: 20%;
-    top: 50%;
+    left: 25%;
+    top: 70%;
     transform: translate(-50%, -50%);
     text-wrap: wrap;
     width: 500px;
+    background: rgba(0,0,0, .5);
+
 }
 .slide-container > li .contents > *{
     color: white;
@@ -111,13 +116,13 @@ header .slidewrapper a{
 .contents p{
     font-family: 'Montserrat';
 }
-.contents ul{
+/* .contents ul{
     color: #fff;
     text-align: center;
     display: inline-block;
     width: 100%;
     height: 600px;
-}
+} */
 .slide-container {
     position: relative;
     width: 100%;
@@ -127,7 +132,7 @@ header .slidewrapper a{
     left: 0;
     transition:left 0.4s;
 }
-.slide-container > li{
+.slide-container li{
     position: absolute;
     left: 0;
     top: 0;
@@ -139,10 +144,10 @@ header .slidewrapper a{
     background-size: cover;
     list-style: none;
 }
-.slide-container .animation{
+/* .slidewrapper .animation{
     left: 0;
     transition:left 0.4s;
-}
+} */
 .top_nav {
     height: 100px;
     background: white;

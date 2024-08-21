@@ -1,11 +1,11 @@
 let slideWrapper = document.querySelector('.slidewrapper');
 let slideContainer = slideWrapper.querySelector('.slide-container');
-let slides = slideContainer.querySelectorAll('.slide-container li');
+let slides = slideContainer.querySelectorAll('li');
 let slideCount = slides.length;
 let currentIdx = 0;
 let nextBtn = document.querySelector('#next');
 let prevBtn = document.querySelector('#prev');
-console.log(nextBtn, prevBtn);
+console.log(slideCount);
 // let timer;
 
 slides.forEach((slide, index) => {
@@ -14,7 +14,7 @@ slides.forEach((slide, index) => {
 });
 // console.log(slides);
 document.addEventListener('DOMContentLoaded',()=>{
-
+ 
     const goTop = document.querySelector('#go-top');
     
     window.addEventListener('scroll',()=>{
@@ -39,10 +39,10 @@ document.addEventListener('DOMContentLoaded',()=>{
   });
 
   function goToSlide(num) {
-  
-    slideContainer.style.left = `${-num * 100}%`;
+
+    slideContainer.style.left = `${-num* 100}%`;
     currentIdx = num;
-    console.log(slideContainer);
+    // console.log(slideContainer);
   
     // 버튼 상태 업데이트
     if (currentIdx === slideCount - 1) {
@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded',()=>{
     goToSlide(currentIdx - 1);
   });
   
-  // goToSlide(0);
+  goToSlide(0);
 
   /*
   
