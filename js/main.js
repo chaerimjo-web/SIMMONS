@@ -6,7 +6,7 @@ let currentIdx = 0;
 let nextBtn = document.querySelector('#next');
 let prevBtn = document.querySelector('#prev');
 console.log(slideCount);
-// let timer;
+// let timer; 
 
 slides.forEach((slide, index) => {
   slide.classList.toggle('active', index === currentIdx);

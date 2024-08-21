@@ -473,7 +473,7 @@ footer .ftnav{
     padding: 60px 0;
     justify-content: center;
     color: #D9CEC1;
-    background: rgba(0,0,0,.8);
+    background: rgba(0,0,0,.8); 
 }
 footer nav{ 
     display: flex;
