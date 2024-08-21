@@ -131,7 +131,7 @@ for(let pdtm of tabMenu){
   pdtm.addEventListener('click',(e)=>{
     e.preventDefault();
     for(let pdtm of tabMenu){
-      pdtm.classList.remove('active');
+      pdtm.classList.remove('active'); 
     }
     pdtm.classList.add('active');
 
@@ -142,3 +142,6 @@ for(let pdtm of tabMenu){
     document.querySelector(target).classList.add('active');
   });
 }
+
+
+        
