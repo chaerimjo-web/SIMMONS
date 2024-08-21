@@ -1,17 +1,18 @@
 let slideWrapper = document.querySelector('.slidewrapper');
-let slideContainer = document.querySelector('.slide-container');
-let slides = slideContainer.querySelectorAll('li');
+let slideContainer = slideWrapper.querySelector('.slide-container');
+let slides = slideContainer.querySelectorAll('.slide-container li');
 let slideCount = slides.length;
 let currentIdx = 0;
 let nextBtn = document.querySelector('#next');
 let prevBtn = document.querySelector('#prev');
+console.log(nextBtn, prevBtn);
 // let timer;
 
 slides.forEach((slide, index) => {
   slide.classList.toggle('active', index === currentIdx);
   slide.style.left = `${index * 100}%`;
 });
-console.log(slides);
+// console.log(slides);
 document.addEventListener('DOMContentLoaded',()=>{
 
     const goTop = document.querySelector('#go-top');
@@ -41,6 +42,7 @@ document.addEventListener('DOMContentLoaded',()=>{
   
     slideContainer.style.left = `${-num * 100}%`;
     currentIdx = num;
+    console.log(slideContainer);
   
     // 버튼 상태 업데이트
     if (currentIdx === slideCount - 1) {
@@ -57,7 +59,7 @@ document.addEventListener('DOMContentLoaded',()=>{
 
     // 슬라이드 활성화
    
-  }
+  }goToSlide(0);
   
   // function AutoSlide(){
   //   timer = setInterval(()=>{
@@ -71,7 +73,8 @@ document.addEventListener('DOMContentLoaded',()=>{
   //   let nextMove = (currentIdx + 1)%slideCount;
   // },4000);
 
-  nextBtn.addEventListener('click', () => {
+  nextBtn.addEventListener('click', (e) => {
+    e.preventDefault();
     goToSlide(currentIdx + 1);
   });
   
@@ -79,4 +82,4 @@ document.addEventListener('DOMContentLoaded',()=>{
     goToSlide(currentIdx - 1);
   });
   
-  goToSlide(0);
+  // goToSlide(0);
