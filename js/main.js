@@ -78,8 +78,14 @@ document.addEventListener('DOMContentLoaded',()=>{
     goToSlide(currentIdx + 1);
   });
   
-  prevBtn.addEventListener('click', () => {
+  prevBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+
     goToSlide(currentIdx - 1);
   });
   
   // goToSlide(0);
+
+  /*
+  
+  */
