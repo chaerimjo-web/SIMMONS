@@ -15,6 +15,9 @@ let pdnextBtn = document.querySelector('#pdnext');
 let pdprevBtn = document.querySelector('#pdprev');
 let pdcurrentIdx = 0;
 
+//tap
+let tabContent = document.querySelectorAll('#tab-content div');
+let tabMenu = document.querySelectorAll('.tab-menu a');
 
 // slides.forEach((slide, index) => {
 //   slide.classList.toggle('active', index === currentIdx);
@@ -123,3 +126,19 @@ document.addEventListener('DOMContentLoaded',()=>{
   
   pdgoToSlide(0);
 
+/* TAB */
+for(let pdtm of tabMenu){
+  pdtm.addEventListener('click',(e)=>{
+    e.preventDefault();
+    for(let pdtm of tabMenu){
+      pdtm.classList.remove('active');
+    }
+    pdtm.classList.add('active');
+
+    for(let pdtc of tabContent){
+      pdtc.classList.remove('active');
+    }
+    let target = pdtm.getAttribute('href');
+    document.querySelector(target).classList.add('active');
+  });
+}
