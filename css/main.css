@@ -317,7 +317,7 @@ a {
     margin: 0 0 10px 600px;
 }
 .borderbox option{
-    background:rgb(233, 234, 252);
+    background:rgb(210, 210, 221);
 }
 
 select{
@@ -431,9 +431,9 @@ select{
     opacity: 0;
     text-align: center;
 }
-.pdinfo:hover{
+ .pdinfo:hover{
     margin-top: -50px;
-}
+} 
 .pdinfo:hover .imtext{ 
     display: block;
     text-align: center;
