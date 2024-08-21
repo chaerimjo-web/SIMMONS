@@ -12,7 +12,7 @@ slides.forEach((slide, index) => {
   slide.classList.toggle('active', index === currentIdx);
   slide.style.left = `${index * 100}%`;
 });
-// console.log(slides);
+// console.log(slides); 
 document.addEventListener('DOMContentLoaded',()=>{
  
     const goTop = document.querySelector('#go-top');
