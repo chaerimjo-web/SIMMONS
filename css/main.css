@@ -23,7 +23,7 @@
     display: none;
     z-index: 1;
     text-align: center;
-    background: rgb(199, 199, 199);
+    background: white;
     border-radius: 5px;
 }
 .popup hr{
@@ -546,7 +546,7 @@ select{
     text-align: center;
     width: 1320px;
     display: flex;
-    /* margin-left: 60px; */
+    margin-left: 150px;
 }
 .tab-wrapper .tab-menu li{
     display: flex;
