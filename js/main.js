@@ -144,7 +144,6 @@ for(let pdtm of tabMenu){
 }
 
 
-        
 const popup = document.querySelector('.popup');
 const check = document.querySelector('#check');
 const button = document.querySelector('button');
