@@ -23,7 +23,7 @@
     display: none;
     z-index: 1;
     text-align: center;
-    background: rgb(199, 199, 199);
+    background: white;
     border-radius: 5px;
 }
 .popup hr{
@@ -317,7 +317,7 @@ a {
     margin: 0 0 10px 600px;
 }
 .borderbox option{
-    background:rgb(210, 210, 221);
+    background:rgb(231, 231, 231);
 }
 
 select{
@@ -546,7 +546,7 @@ select{
     text-align: center;
     width: 1320px;
     display: flex;
-    /* margin-left: 60px; */
+    margin-left: 150px;
 }
 .tab-wrapper .tab-menu li{
     display: flex;
@@ -564,7 +564,7 @@ select{
 }
 .tab-wrapper .tab-menu li a.active hr{ 
     background: rgba(0, 0, 0, .8);
-    border: none;
+    /* border: none; */
 }
 #tab-content img{
     margin: 0 auto;
@@ -573,15 +573,15 @@ select{
     margin-left: 100px;
     height: 600px;
 }
-#tab-content .t1_img div{
-    /* position: absolute; */
-}
 
 #tab-content div{
     display: none;
 }
-#tab-content div img.active{
-    display: inline-block;
+#tab-content{
+    height: 500px;
+}
+#tab-content div.active img{
+    display: block;
 }
 
 /* FOOTER */
