@@ -235,7 +235,7 @@ header .slidewrapper a{
 }
 
 .logo a {
-    background: url(../images/header_logo.png) no-repeat;
+    background: url(../images/header_logo.png) no-repeat; 
     width: 79px;
     height: 52px;
     text-decoration: none;
