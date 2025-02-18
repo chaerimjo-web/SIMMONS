@@ -472,58 +472,6 @@ select{
 /* Background images for mattress list */
 
 
-/* TAB-MENU */
- /* .tabs{
-    z-index: -1;
-    margin: 150px 0 150px 0;
-}
-.t1_img{
-    position: relative;
-    width: 1320px;
-    height: 600px;
-}
-#tab-content div, img{
-    margin-top: 0;
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    justify-content: center;
-    display: none;
-}
-.tab-menu {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    margin-left: -40px;
-    position: relative;
-}
-.tab-menu li{
-    list-style: none;
-    border-bottom: 5px solid gray;
-    font-family: "Overpass", sans-serif;
-    text-align: center;
-    line-height: 22px;
-    display: inline-block;
-}
-.tab-menu li a{
-    letter-spacing: 2px;
-    color: gray; 
-    display: inline-block;
-    text-align: center;
-}
-
-#tab-content {
-    position: relative;
-}
-.tab-menu li a.active{
-    color: black;
-    border-bottom: 5px solid black;
-}
-
-#tab-content div.active{
-    display: inline-block;
-} */
-
 .tab-wrapper{
     position: relative;
     margin: 160px 0 160px 0;
