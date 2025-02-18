@@ -61,8 +61,6 @@
     cursor: pointer;
 }
 
-
-
 header nav {
     display: flex;
     justify-content: space-between;
@@ -75,7 +73,7 @@ header .slidewrapper {
     position: relative;
     width: 100%;
     overflow: hidden;
-    height: 600px;
+    height: 850px;
 }
 
 
@@ -150,18 +148,18 @@ header .slidewrapper a{
     background: rgba(0,0,0, .5);
 }
 .slide1 {
-    background-image: url(../images/header_banner_hotel_img.jpg)
+    background-image: url(../images/Tric-1_2.jpg)
 }
 
 .slide2 {
-    background-image: url(../images/banner2.png)
+    background-image: url(../images/Convi-2.jpg)
 }
 
 .slide3 {
-    background-image: url(../images/header_banner_hotel_img.jpg)
+    background-image: url(../images/Erc-1.jpg)
 }
 .slide4 {
-    background-image: url(../images/header_banner_hotel_img.jpg)
+    background-image: url(../images/arla.png)
 }
 /* Slide */
 .slidewrapper {
@@ -301,7 +299,9 @@ a {
     left: 0;
     z-index: 1;
 }
-
+main{
+    height: 100%;
+}
 /* Search */
 .search {
     width: var(--container);
@@ -519,7 +519,7 @@ select{
     /* position: relative; */
     width: 1320px;
     margin-left: 100px;
-    height: 600px;
+    /* height: 600px; */
 }
 
 #tab-content div{
