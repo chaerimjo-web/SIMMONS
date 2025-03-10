@@ -65,6 +65,8 @@ header nav {
     display: flex;
     justify-content: space-between;
     padding-top: 40px;
+    align-items: center;
+    padding: 20px 0 20px 0;
 }
 
 
@@ -227,18 +229,18 @@ header .slidewrapper a{
 }
 
 .top_nav {
-    height: 100px;
+    /* height: 100px; */
+    display: flex;
     background: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, .3);
 }
 
 .logo a {
     background: url(../images/header_logo.png) no-repeat; 
-    width: 79px;
-    height: 52px;
+    padding: 2px 28px;
     text-decoration: none;
     text-indent: -9999em;
-    display: block;
+    display: inline-block;
 }
 .hidden{
     overflow: hidden;
@@ -266,8 +268,8 @@ a {
 
 .menuLink:hover .dropdown li {
     display: block;
-    text-align: center;
-    top: 10px;
+    /* text-align: center; */
+    /* top: 10px; */
 }
 
 /* Dropdown menu */
