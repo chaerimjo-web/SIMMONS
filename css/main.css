@@ -38,9 +38,9 @@
     /* width: var(--container);
     margin: 0 auto; */
     display: flex;
-	justify-content: space-between;
+	/* justify-content: space-between; */
 	align-items: center;
-	width: 100%;
+	/* width: 100%; */
 }
 
 /* Header */
@@ -328,55 +328,77 @@ main{
     height: 100%;
 }
 /* Search */
-.search {
-    width: var(--container);
-    height: 50px;
-    position: relative;
+.slidedd{
+  padding: 100px;
+  justify-content: end;
 }
-
-.search .borderbox {
+.search {
+  /* width: var(--container); */
+  /* height: 50px; */
+  /* position: relative; */
+  display: flex;
+  .borderbox {
     display: flex;
-    justify-content: center;
+    gap: 20px;
+    /* justify-content: center;
     align-items: center;
     position: absolute;
-    margin: 0 0 10px 600px;
-}
-.borderbox option{
-    background:rgb(231, 231, 231);
-}
-
-select{
-    border: none;
-    border-bottom: 1px solid #000000;
-}
-
-#size {
-    width: 155px;
-    height: 25px;
-}
-
-#hardness {
-    width: 170px;
-    height: 25px;
-    margin-left: 40px;
-}
-
-.found {
-    height: 25px;
-    width: 220px;
-    text-align: center;
-    margin: 0 10px 0 30px;
-    border: none;
-    border-bottom: 1px solid #000;
-}
-.see {
-    width: 30px;
-    height: 30px;
-    color: black;
+    margin: 0 0 10px 600px; */
+    select{
+      border: none;
+      border-bottom: 1px solid #000000;
+    }
+    #size {
+      width: 155px;
+    }
+    .found {
+      width: 220px;
+        /* height: 25px;
+        text-align: center;
+        margin: 0 10px 0 30px; */
+        border: none;
+        border-bottom: 1px solid #000;
+    } 
+  } 
+  input{
+    outline: none;
+  }
 }
 
+.product_slidewrapper{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+.mattress_slides{
+    display: flex;
+    gap: 27px;
+}
+.shop{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  h2{
+    font-size: 30px;
+    font-family: "Roboto Slab", serif;
+    /* margin-top: 150px; */
+    font-weight: 300;
+  }
+  a{
+    display: inline-block;
+    padding: 15px 20px;
+    font-family: "Overpass", sans-serif;
+    font-size: 22px;
+  }
+  a:hover{
+    background: #8C9D96;
+    transition: 0.3s;
+    color: #fff;
+  }
+}
 /* Product slide */
-.product_slidewrapper {
+/* .product_slidewrapper {
     position: relative;
     display: flex;
     height: 480px;
@@ -422,7 +444,7 @@ select{
 }
 
 /* Mattress list */
-
+/* 
 .pdinfo{
     list-style: none;
     transition: 0.3s ease;
@@ -467,13 +489,13 @@ select{
     opacity: 0.5;
 }
 .PD_mattress li{
-    list-style: none;
-}
-.imtext a{
+    list-style: none; 
+} */
+/* .imtext a{
     background: transparent;
     border: 1px solid #fff;
     color: #fff;
-}
+} */
 #go-top{
     width: 48px;
     height: 48px;
@@ -492,65 +514,6 @@ select{
 #go-top.active{
 	opacity: 1;
 	pointer-events: auto;
-}
-/* Background images for mattress list */
-
-
-.tab-wrapper{
-    position: relative;
-    margin: 160px 0 160px 0;
-}
-.tab-wrapper .tab-menu{
-    overflow: hidden;
-}
-.tab-wrapper .tab-menu li{
-    display: flex;
-}
-.tab-wrapper .tab-menu .btn{
-    font-size: 20px;
-    margin: 0 auto;
-}
-.tab-wrapper .tab-menu {
-    color: #fff;
-    text-align: center;
-    width: 1320px;
-    display: flex;
-    margin-left: 150px;
-}
-.tab-wrapper .tab-menu li{
-    display: flex;
-    margin: 0 auto;
-}
-.tab-wrapper .tab-menu li a{
-    text-align: center;
-    display: block;
-}
-.tab-wrapper .tab-menu li a hr{
-    width: 300px;
-    height: 10px;
-    background: rgba(128, 128, 128, .7);
-    border: none;
-}
-.tab-wrapper .tab-menu li a.active hr{ 
-    background: rgba(0, 0, 0, .8);
-    /* border: none; */
-}
-#tab-content img{
-    margin: 0 auto;
-    /* position: relative; */
-    width: 1320px;
-    margin-left: 100px;
-    /* height: 600px; */
-}
-
-#tab-content div{
-    display: none;
-}
-#tab-content{
-    height: 500px;
-}
-#tab-content div.active img{
-    display: block;
 }
 
 /* FOOTER */
